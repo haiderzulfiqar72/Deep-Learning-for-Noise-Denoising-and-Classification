@@ -5,4 +5,18 @@ To address the issue of noisy images, we design an autoencoder model that learns
 
 Furthermore, we construct an end-to-end denoising-classifier network that combines the denoising autoencoder and the image classifier. This network simultaneously denoises the noisy images and performs image classification. We evaluate its performance on the test data and report the accuracy and loss of the combined tasks.
 
+Here's how we can break this for easier interpretation:
+
+Deliverable 1: ROC Analysis for Traffic Sign Detector
+The project begins with loading the ground-truth values and detector outputs. The ROC curve is then computed and plotted to evaluate the traffic sign detector's performance.
+
+Deliverable 2: Autoencoder Denoising for Fashion MNIST Classification
+The project proceeds with the MNIST fashion dataset, where images are loaded, normalized, and subjected to simulated noise. A CNN classifier is created and trained using clean images. The classifier's accuracy on clean test images is reported. Subsequently, the classifier is evaluated on noisy test images, revealing the impact of noise on classification performance.
+
+Deliverable 3: Autoencoder Denoising and Classification
+A CNN-based autoencoder model is defined to denoise noisy images. The autoencoder is trained using noisy images and the denoising effectiveness is demonstrated by denoising and plotting noisy test images. The classifier's accuracy on autoencoder denoised test images is reported.
+
+Deliverable 4: End-to-End Denoising-Classification Network 
+An advanced denoising-classification model is constructed, combining an encoder for feature extraction, two branches for classification and denoising, and a decoder for image reconstruction. The model is trained end-to-end using noisy images, and classification accuracy on noisy test images is presented.
+
 Overall, this project showcases the power of deep learning in handling noisy data and demonstrates the effectiveness of CNNs for image classification and denoising tasks.
